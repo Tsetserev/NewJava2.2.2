@@ -7,17 +7,18 @@ public class Main {
         int percent = payment / 100; // бонусные рубли
 
         int fullBalance;
-        if (payment > 1000){
-            fullBalance = balance + payment + percent;
-        } else {
-            fullBalance = balance + payment;
-        }
         if (payment > 1000) {
+            System.out.println(balance + payment + percent + " Ваш Баланс");
+            System.out.println(percent + " Бонусов начислено");
+        } else {
+            System.out.println(balance + payment + " Ваш баданс");
+        }
+       /* if (payment > 1000) {
             System.out.println("Ваш баланс " + fullBalance);
             System.out.println("Бонусов начислено " + percent);
         } else {
             System.out.println("Ваш баланс " + fullBalance);
-        }
+        }*/
 
     }
 }
